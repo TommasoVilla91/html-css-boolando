@@ -5,49 +5,63 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;;
-  }
+}
 
-  img {
+img {
     max-width: 100%;
-  }
+}
   
   /* COMMON */
   /* Layout */
 
-  .container {
+.container {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
 
     /* debug */
     border: 1px solid black;
-    min-height: 200px;
-  }
+    min-height: 80px;
+}
 
-  .section {
+header {
+    background-color: #ff6900;
+    margin-bottom: 3rem;
+}
+
+.section {
     padding: 30px 0;
-  }
+}
 
-  .row {
+.row {
     display: flex;
     justify-content: space-between;
     row-gap: 10px;
     flex-wrap: wrap;
-  }
+}
 
-  .col {
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.col {
     width: calc(95% / 3);
 
     /* debug */
     border: 1px solid black;
     min-height: 200px;
-  }
+}
 
-  .card {
+.card {
     position: relative;
-  }
+}
 
-  .heart {
+.heart {
     position: absolute;
     border: 1px solid white;
     right: 0;
@@ -56,38 +70,65 @@
     height: 1.4rem;
     text-align: center;
     background-color: white;
-  }
+}
 
-  .discount {
+.discount {
     position: absolute;
     left: 0;
     bottom: 20%;   
-  }
+}
 
-  .box {
+.box {
     text-align: center;
     color: white;
     padding: 0.3rem;
-  }
+}
 
-  .percentage {
+.percentage {
     background-color: red;
     
-  }
+}
 
-  .sustainability {
+.sustainability {
     background-color: green;
+}
+
+red {
+    color: red;
+}
+
+old {
+    text-decoration: line-through;
+}
+
+.bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+/* header */
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
   }
 
-  .description {
+
+  /* main */
+.description {
     font-size: 0.7rem;
     line-height: 0.8rem;
-  }
+}
 
-  red {
+.card:hover .front-img {
+    position: relative;
+    z-index: -2;
+}
+
+.card:hover .heart {
     color: red;
-  }
-
-  old {
-    text-decoration: line-through;
-  }
+}
